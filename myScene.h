@@ -3,6 +3,7 @@
 
 #include <QGraphicsScene>
 #include <QtWebKit>
+#include <QString>
 
 class myScene : public QGraphicsScene
 {
@@ -17,13 +18,11 @@ public slots:
     void forward();
     void reload();
     void stop();
-    void goToAdress();
-
-protected:
-    void timerEvent();
+    void goToAddress(QString goThere);
 
 private:
     QWebView pageWindow;
+
 };
 
 #endif // MYSCENE_H

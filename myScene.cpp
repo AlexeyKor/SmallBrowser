@@ -31,6 +31,7 @@ void myScene::stop()
 {
 }
 
-void myScene::goToAdress()
+void myScene::goToAddress(QString goThere)
 {
+    pageWindow.load(QUrl(goThere));
 }

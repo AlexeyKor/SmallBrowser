@@ -89,12 +89,12 @@
      <string>Stop</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="adressLine">
+   <widget class="QTextEdit" name="addressLine">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>741</width>
+      <width>821</width>
       <height>31</height>
      </rect>
     </property>

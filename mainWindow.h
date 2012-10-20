@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <QGraphicsPixmapItem>
-#include <string>
+#include <QString>
 
 namespace Ui {
 class MainWindow;
@@ -16,7 +16,13 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    
+
+public slots:
+    void receiveAddress();
+
+signals:
+    void sendAddress(QString);
+
 private:
     Ui::MainWindow *ui;
 };
