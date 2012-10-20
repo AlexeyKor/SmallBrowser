@@ -12,6 +12,10 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->addressLine, SIGNAL(textChanged()), this, SLOT(receiveAddress()));
     connect(this, SIGNAL(sendAddress(QString)), scene, SLOT(goToAddress(QString)));
     connect(ui->homepage, SIGNAL(clicked()), scene, SLOT(homepage()));
+    connect(ui->back, SIGNAL(clicked()), scene, SIGNAL(back()));
+    connect(ui->forward, SIGNAL(clicked()), scene, SIGNAL(forward()));
+    connect(ui->reload, SIGNAL(clicked()), scene, SIGNAL(reload()));
+    connect(ui->stop, SIGNAL(clicked()), scene, SIGNAL(stop()));
 }
 
 MainWindow::~MainWindow()

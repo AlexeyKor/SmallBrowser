@@ -14,11 +14,13 @@ public:
 
 public slots:
     void homepage();
+    void goToAddress(QString goThere);
+
+signals:
     void back();
     void forward();
     void reload();
     void stop();
-    void goToAddress(QString goThere);
 
 private:
     QWebView pageWindow;
